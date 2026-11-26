@@ -1,0 +1,16 @@
+node_modules
+.next
+dist
+.turbo
+.env
+.env.local
+*.pyc
+__pycache__
+.venv
+venv
+uploads
+data
+*.egg-info
+.DS_Store
+apps/web/.env.local
+apps/ai/.env

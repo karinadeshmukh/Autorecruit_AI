@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f3ec;
+  --foreground: #111111;
+  --card: #fffefb;
+  --muted: #6b675f;
+  --lime: #c8f04d;
+  --sunflower: #f5c518;
+  --coral: #e23d3d;
+  --ink: #111111;
+  --radius: 1.25rem;
+  --shadow: 0 24px 60px -28px rgba(40, 32, 18, 0.28);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-lime: var(--lime);
+  --color-sunflower: var(--sunflower);
+  --color-coral: var(--coral);
+  --color-ink: var(--ink);
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.75rem;
+  --radius-3xl: 2rem;
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.lime-mark {
+  background: linear-gradient(180deg, transparent 55%, #c8f04d 55%);
+}
+
+.lime-glow {
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 40%, rgba(200, 240, 77, 0.45), transparent 70%),
+    var(--background);
+}
+
+.card-float {
+  box-shadow: var(--shadow);
+}
+
+/* Sleek custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(17, 17, 17, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(17, 17, 17, 0.3);
+}

@@ -1,0 +1,11 @@
+node_modules
+apps/web/.next
+apps/web/node_modules
+packages/*/node_modules
+.env
+data
+uploads
+*.log
+.git
+.gitignore
+
